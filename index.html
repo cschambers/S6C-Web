@@ -3,16 +3,18 @@
     <head>
         <title>Salisbury Sixth Form College Prospectus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
 
-        
+
+
         <link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.2.min.css" />
         <script src="js/jqm/jquery-1.11.1.min.js"></script>
         <script src="js/jqm/jquery.mobile-1.4.2.min.js"></script>
-        
+
         <link rel="stylesheet" href="CSS/S6C.min.css" />
         <link rel="stylesheet" href="CSS/jquery.mobile.icons.min.css" />
-        
+
+        <link rel="stylesheet" href="CSS/index.css" />
+
         <script type="text/javascript" src="cordova.js"></script>
         <script>
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -25,10 +27,32 @@
                                                 });
                                       });
         </script>
-    </head> 
+    </head>
     <body>
     <div data-role="page"  data-title="S6C Prospectus">
+
+      <div data-role="panel" id="menu">
+                  <ul data-role="listview" data-inset="true">
+                      <li> <a href="Welcome.html" data-transition="slidefade">Welcome to S6C</a></li>
+                      <li><a href="Different.html" data-transition="slidefade">A Different experience</a></li>
+                      <li><a href="Designed.html" data-transition="slidefade">Designed with you, for you</a></li>
+                      <li><a href="Inspired.html" data-transition="slidefade">Inspired to learn</a></li>
+                      <li><a href="About.html" data-transition="slidefade">About Salisbury Sixth Form College</a></li>
+                      <li><a href="Supported.html" data-transition="slidefade">Supported every step of the way</a></li>
+                      <li><a href="Positive.html" data-transition="slidefade">Positive progression</a></li>
+                      <li><a href="Further.html" data-transition="slidefade">Go further</a></li>
+                      <li><a href="SubjectChoices.html" data-transition="slidefade">Your subject choices</a></li>
+                      <li><a href="Applying.html" data-transition="slidefade">Applying for a place</a></li>
+                  </ul>
+                  <ul data-role="listview" data-inset="true">
+                      <li> <a href="Courses.html">Subjects</a>
+                      </li>
+                  </ul>
+                  <p></p>
+        </div>
+
         <div data-role="header" data-position="fixed" >
+            <a href="#menu" data-icon="bars"></a>
             <h1>S6C Prospectus</h1>
         </div>
         <div data-role="content">
@@ -36,30 +60,14 @@
                 <img src="img/13.jpg" width="100%"/>
                 <p></p>
             </div>
-            <div>
-            <ul data-role="listview" data-inset="true">
-                <li> <a href="Welcome.html" data-transition="slidefade">Welcome to S6C</a></li>
-                <li><a href="Different.html" data-transition="slidefade">A Different experience</a></li>
-                <li><a href="Designed.html" data-transition="slidefade">Designed with you, for you</a></li>
-                <li><a href="Inspired.html" data-transition="slidefade">Inspired to learn</a></li>
-                <li><a href="About.html" data-transition="slidefade">About Salisbury Sixth Form College</a></li>
-                <li><a href="Supported.html" data-transition="slidefade">Supported every step of the way</a></li>
-                <li><a href="Positive.html" data-transition="slidefade">Positive progression</a></li>
-                <li><a href="Further.html" data-transition="slidefade">Go further</a></li>
-                <li><a href="SubjectChoices.html" data-transition="slidefade">Your subject choices</a></li>
-                <li><a href="Applying.html" data-transition="slidefade">Applying for a place</a></li>
-            </ul>
-            <ul data-role="listview" data-inset="true">
-                <li> <a href="Courses.html">Subjects</a>
-                </li>
-            </ul>
-            <p></p>
-            </div>
+
         </div>
         <div data-role="footer" data-position="fixed" >
             <h3>Aspiration &bull; Excellence &bull; Success</h3>
             <h5>&copy; 2014 Craig Chambers</h5>
         </div>
     </div>
+
+
     </body>
-</html> 
+</html>
